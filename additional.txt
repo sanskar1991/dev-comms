@@ -1,0 +1,17 @@
+""""
+TestCase: class use for writing tests in Django
+""""
+""""
+get_user_model: 
+Instead of referring to User directly, you should reference the user model using django.contrib.auth.get_user_model(). 
+This method will return the currently active user model – 
+i.e., the custom user model if one is specified, or User otherwise.
+""""
+""""
+get_user_model(): uses for indirect referencing of User model.
+get_user_model().objects().create_user()
+""""
+""""
+check_passwod(): a helper function of django user model which basically returns true if the password is correct.
+""""
+
