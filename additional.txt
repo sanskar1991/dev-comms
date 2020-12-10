@@ -14,4 +14,12 @@ get_user_model().objects().create_user()
 """"
 check_passwod(): a helper function of django user model which basically returns true if the password is correct.
 """"
+""""
+reverse: django.urls
+It generates reverse url for the given url using its name field: 
+path('', views.abc, name='abc') => reverse('abc') then reverse(views.abc)
+""""
+""""
+Client: allow to make test request to our application
+""""
 
